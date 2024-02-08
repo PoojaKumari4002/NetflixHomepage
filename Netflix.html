@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bgPage{
+    background-color: rgb(45,45,45);
+}
+.mainPage{
+    height:  700px;
+    background-image: url("Netflixa.jpg");
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@media (max-width:800px) {
+    .mainPage{
+       background-image:  1000px;
+    }
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.NetflixIMg{
+    width: 150px;
+}
+@media (max-width:500px) {
+    .NetflixIMg{
+    width: 100px;
+    height: fit-content;
+    }
+}
+.signIn{
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+.RightBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+@media (max-width: 300px) {
+    .RightBox{
+    flex-direction: column;
+    }
+}
+#selector{
+    color: white;
+    background-color: transparent;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.headings{
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+.MainHeading{
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-top: 180px;
+}
+@media (max-width: 800px) {
+    .MainHeading{
+        font-size: 2.1rem;
+    }
+}
+.Heading2{
+    font-size: 1.7rem;
+}
+@media (max-width: 800px) {
+    .Heading2{
+        font-size: 1.3rem;
+    }
+}
+.Heading3{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    .Heading3{
+        font-size: 1.1rem;
+    }
+}
+.mailBox{
+    text-align: center;
+    margin-top: 20px;
+}
+@media (max-width: 450px) {
+    .mailBox{
+        flex-direction: column;
+    }
+}
+.email{
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 15px;
+    width: 400px;
+    background-color: transparent;
+    border: 1px solid  rgb(45,45,45);
+}
+.emailStart{
+    background-color: red;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+@media (max-width: 1100px) {
+    .MainHeading{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 1000px) {
+    .mainPage{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .NetflixIMg{
+    width: 140px;
+    height: fit-content;
+    }
+    .MainHeading{
+        font-size: 2.1rem;
+    }
+    .Heading2{
+        font-size: 1.5rem;
+    }
+    .Heading3{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 800px) {
+    .mainPage{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .NetflixIMg{
+    width: 130px;
+    height: fit-content;
+    }
+    .MainHeading{
+        font-size: 1.9rem;
+    }
+    .Heading2{
+        font-size: 1.3rem;
+    }
+    .Heading3{
+        font-size: 1.1rem;
+    }
+    .mailBox{
+        flex-wrap: wrap;
+    }
+    .email{
+        font-size: 1rem;
+        width: 300px;
+    }
+}
+@media (max-width: 600px) {
+    .mainPage{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .NetflixIMg{
+    width: 120px;
+    height: fit-content;
+    }
+    .MainHeading{
+        font-size: 1.7rem;
+    }
+    .Heading2{
+        font-size: 1.1rem;
+    }
+    .Heading3{
+        font-size: 0.9rem;
+    }
+    .mailBox{
+        flex-direction: column;
+    }
+    .email{
+        font-size: 1rem;
+        padding: 10px;
+        width: 200px;
+    }
+    .emailStart{
+        margin-top: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.15rem;
+    }
+}
+@media (max-width: 400px) {
+    .mainPage{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .NetflixIMg{
+    width: 110px;
+    height: fit-content;
+    }
+}
+.page{
+    margin-top: 10px;
+    background-color: black;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.content2{
+    padding-left: 30px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.Lheading{
+    margin-right: 70px;
+}
+.Page2Heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+}
+.Page2Heading2{
+    padding-right: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+.RImages{
+    box-sizing: border-box;
+}
+.TVimg{
+    position: absolute;
+    margin-left: -80px;
+    top: 120%;
+}
+.TvVideo{
+    position: relative;
+    margin-top: -20px;
+} 
+.downloadBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 15px;
+    width: 400px;
+    padding: 10px;
+    margin-left: 120px;
+    position: absolute;
+    top: 270%;
+}
+.imgBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.D_image{
+    width: 50px;
+}
+.D_movie{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.movieName{
+    color: white;
+}
+.Download{
+    font-size: 0.8rem;
+    color: blue;
+}
+.gif{
+    height: 4rem;
+    width: auto;
+}
+.page3Heading{
+    padding: 30px;
+}
+.page3Image{
+    position: absolute;
+    margin-left: -620px;
+    top: 320%;
+}
+.page3vdo{
+    position: relative;
+    margin-top: -50px;
+    width: 25rem;
+    margin-right: 110px;
+    object-fit: contain;
+    /* overflow-clip-margin: content-box;*/
+    overflow: hidden; 
+}
+.page3img{
+    padding: 30px;
+}
+.Page4Heading{
+    padding: 10px;
+}
+.LastPage{
+    margin-top: 10px;
+    background-color: black;
+    padding: 30px;
+}
+.LastHeading{
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.Question{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(45,45,45);
+    font-size: 1.5rem;
+    color: white;
+}
+.Question:hover{
+    background-color: rgb(65, 65, 65);
+}
+.answer{
+    margin-top: 2px;
+    padding: 20px;
+    background-color: rgb(45,45,45);
+    font-size: 1.5rem;
+    color: white;
+}
+.LastPara{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.lastBox{
+    margin-bottom: 50px;
+}
+.B_page{  
+    line-height: 3;
+    margin-top: 10px;
+    background-color: black;
+    padding: 60px;
+    height: 450px;
+    color: rgb(193, 193, 193);
+}
+.b_quetion a{
+    color: rgb(193, 193, 193);
+}
+.B_anchors{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    line-height: 2.5;
+    margin-left: -145px;
+}
+.B_anchors a{
+    color: rgb(193, 193, 193);
+}
+.a{
+    display: flex;
+    flex-direction: column;
+}
+.select{
+    margin-top: 10px;
+}
+.Last{
+    font-size: 1rem;
+}
+    </style>
+</head>
+<body>
+    <div class="bgPage">
+    <div class="mainPage">
+       <div class="navBar">
+        <img class="NetflixIMg" src="Netflix.jpg" alt="">
+        <div class="RightBox">
+            <select name="" id="selector">Language
+            <option value="">English</option>
+            <option value="">Hindi</option>
+        </select>
+            <a class="signIn" href="">Sign in</a>
+        </div>
+       </div>
+       <div class="headings">
+       <h1 class="MainHeading">Unlimited movies, TV shows and more</h1>
+       <p class="Heading2">Watch anywhere. Cancel anytime.</p>
+       <p class="Heading3">Ready to watch? Enter your email to create or restart your membership.</p>
+       <div class="mailBox">
+           <input type="text" placeholder="Email address" class="email">
+           <a href="link.html" class="emailStart">Get Started ></a>
+       </div>
+       
+       </div>
+    </div>
+    <div class="page">
+        <div class="content2">
+            <div class="Lheading">
+                <h1 class="Page2Heading">Enjoy on your TV</h1>
+                <p class="Page2Heading2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="RImages">
+                <div class="TvVideo"><video autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4"></video></div>
+                <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="TVimg">
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="LImage">
+            <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="nmhp-card-animation-asset-image" class="page3MainImg">
+            <div class="downloadBox">
+                <div class="imgBox">
+                <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" class="D_image">
+                <div class="D_movie">
+                <p class="movieName">Stranger Things</p>
+                <p class="Download">Downloading...</p>
+                </div>
+            </div>
+                <div class="GifBox">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="" class="gif">
+                </div>
+            </div>
+        </div>
+        <div class="RHeading">
+            <h1 class="Page2Heading">Download your shows to watch offline</h1>
+            <h4 class="Page2Heading2">Save your favourites easily and always have something to watch.</h4>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page3Heading">
+            <h1 class="Page2Heading">Watch everywhere</h1>
+            <h4 class="Page2Heading2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
+        </div>
+        <div class="page3img">
+            <video class="page3vdo" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" type="video/mp4"></video>
+            <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" data-uia="nmhp-card-animation-asset-image" class="page3Image">
+        </div>
+    </div>
+    <div class="page">
+        <div class="page4Image">
+            <img src="children.png" alt="">
+        </div>
+        <div class="Page4Heading">
+            <h1 class="Page2Heading">Create profiles for kids</h1>
+            <h4 class="Page2Heading2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h4>
+        </div>
+    </div>
+    <div class="LastPage">
+         <h1 class="LastHeading">Frequently Asked Questions</h1>
+         <div class="questions">
+            <details>
+                <summary class="Question">
+                What is Netflix
+                </summary>
+             <p class="answer">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected.
+                <br>
+                <br>
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+         </details>
+         <details>
+                <summary class="Question">
+                How much does Netflix Cost?
+                </summary>
+                <p class="answer">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+                </p>
+        </details>
+        <details>
+            <summary class="Question">
+                Where I can watch?
+            </summary>
+            <p class="answer">
+                Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                <br>
+                <br>
+                You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+            </p>
+        </details>
+        <details>
+            <summary class="Question">
+                How do I cancel?
+            </summary>
+            <p class="answer">
+                Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+            </p>
+        </details>
+        <details>
+            <summary class="Question">
+            What can I watch on Netflix?
+            </summary>
+            <p class="answer">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+        </details>
+        <details>
+            <summary class="Question">
+            Is Netflix good for kids?
+            </summary>
+            <p class="answer">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                <br><br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+        </details>
+         </div>
+         <p class="LastPara">Ready to watch? Enter your email to create or restart your membership.</p>
+         <div class="lastBox">
+         <div class="mailBox">
+            <input type="text" placeholder="Email address" class="email">
+            <a href="link.html" class="emailStart">Get Started ></a>
+        </div>
+    </div>
+    </div>
+    <div class="B_page">
+        <span class="b_quetion">Questions? Call <a href="link.html">000-800-100-8343</a></span>
+        <div class="B_anchors">
+            <div class="a">
+                <a href="link.html">FAQ</a>
+                <a href="link.html">Investor Relations</a>
+                <a href="link.html">Privacy</a>
+                <a href="link.html">Speed Test</a>
+            </div>
+            <div class="a">
+                <a href="link.html">Help Centre</a>
+                <a href="link.html">Jobs</a>
+                <a href="link.html">Cookie Preferences</a>
+                <a href="link.html">Legal Notices</a>
+            </div>
+            <div class="a">
+                <a href="link.html">Account</a>
+                <a href="link.html">Ways to Watch</a>
+                <a href="link.html">Corporate Information</a>
+                <a href="link.html">Only on Netflix</a>
+            </div>
+            <div class="a">
+                <a href="link.html">Media Centre</a>
+                <a href="link.html">Terms of USe</a>
+                <a href="link.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="select">
+        <select name="" id="selector">Language
+            <option value="">English</option>
+            <option value="">Hindi</option>
+        </select></div>
+        <p class="Last">Netflix India</p>
+    </div>
+</div>
+    <script src="https://kit.fontawesome.com/4cc7257a1c.js" crossorigin="anonymous"></script>
+</body>
+</html>
